@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DELAY=3
+
+HW_PORT=$(/usr/sbin/networksetup -listallhardwareports | /usr/bin/awk '/AirPort|Wi-Fi/ {getline; print $2}')
+CURRENT_POWER_SETTING="$(/usr/sbin/networksetup -getairportpower $HW_PORT)"
+
+if [[ $CURRENT_POWER_SETTING == *On* ]]; then
+	/usr/sbin/networksetup -setairportpower $HW_PORT off
+	/bin/sleep $DELAY
+fi
+
+/usr/sbin/networksetup -setairportpower $HW_PORT on
