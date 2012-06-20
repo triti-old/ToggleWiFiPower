@@ -6,7 +6,7 @@
 	<string>edu.utexas.its.CycleAirPortPower</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/cycle_airport_power</string>
+		<string>/usr/local/bin/toggle_wifi_power</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
