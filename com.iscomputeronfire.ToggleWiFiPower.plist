@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>edu.utexas.its.CycleAirPortPower</string>
+	<string>edu.utexas.its.ToggleWiFiPower</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/toggle_wifi_power</string>
